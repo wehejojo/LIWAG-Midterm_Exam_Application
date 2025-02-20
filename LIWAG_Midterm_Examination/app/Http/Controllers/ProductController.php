@@ -9,10 +9,11 @@ class ProductController extends Controller
     public function index()
     {
         $products = [
-            ['name' => 'iPhone 15', 'brand' => 'Apple', 'price' => '$999'],
-            ['name' => 'Samsung Galaxy S23', 'brand' => 'Samsung', 'price' => '$899'],
-            ['name' => 'MacBook Air M2', 'brand' => 'Apple', 'price' => '$1199'],
-            ['name' => 'Sony WH-1000XM5', 'brand' => 'Sony', 'price' => '$399'],
+            ['name' => 'Klok',       'brand' => 'Moment', 'price' => '$5'],
+            ['name' => 'Kalkulator', 'brand' => 'Moment', 'price' => '$2'],
+            ['name' => 'Kar',        'brand' => 'Moment', 'price' => '$40000'],
+            ['name' => 'Kamera',     'brand' => 'Moment', 'price' => '$25'],
+            ['name' => 'Kompass',    'brand' => 'Moment', 'price' => '$16'],
         ];
 
         return view('products.index', compact('products'));
